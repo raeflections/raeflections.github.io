@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="raeflections — photography portfolio">
-  <title>raeflections</title>
+  <title>raeflections — Featured</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -77,64 +77,58 @@
       </div>
     </section>
 
-    <section class="featured-section" aria-label="Featured work">
+    <section class="featured-section" aria-label="Featured photographs">
       <div class="featured-scroll">
         <div class="featured-row featured-row-three">
           <figure class="photo-card">
-            <a class="photo-link" href="arnex publicity project.html" aria-label="View Arnex Publicity Project">
-              <img src="images/featured/Arnex Publicity Project.png" alt="Arnex Publicity Project">
-              <span class="photo-overlay"><span class="photo-overlay-title">Arnex Publicity Project</span><span class="photo-overlay-copy">View project</span></span>
-            </a>
+            <button class="photo-button" type="button" data-full="images/featured/Arnex Publicity Project.png">
+              <img src="images/featured/Arnex Publicity Project.png" alt="Featured photograph 01" onerror="this.parentElement.classList.add('missing')">
+            </button>
             <figcaption><span class="tags">#insert tag</span></figcaption>
           </figure>
 
           <figure class="photo-card">
-            <a class="photo-link" href="graduation publicity project.html" aria-label="View Graduation Publicity Project">
-              <img src="images/featured/Graduation Publicity Project.png" alt="Graduation Publicity Project">
-              <span class="photo-overlay"><span class="photo-overlay-title">Graduation Publicity Project</span><span class="photo-overlay-copy">View project</span></span>
-            </a>
+            <button class="photo-button" type="button" data-full="images/featured/Graduation Publicity Project.png">
+              <img src="images/featured/Graduation Publicity Project.png" alt="Featured photograph 02" onerror="this.parentElement.classList.add('missing')">
+            </button>
             <figcaption><span class="tags">#insert tag</span></figcaption>
           </figure>
 
           <figure class="photo-card">
-            <a class="photo-link" href="sikkim publicity project.html" aria-label="View Sikkim Publicity Project">
-              <img src="images/featured/Sikkim Publicity Project.png" alt="Sikkim Publicity Project">
-              <span class="photo-overlay"><span class="photo-overlay-title">Sikkim Publicity Project</span><span class="photo-overlay-copy">View project</span></span>
-            </a>
+            <button class="photo-button" type="button" data-full="images/featured/Sikkim Publicity Project.png">
+              <img src="images/featured/Sikkim Publicity Project.png" alt="Featured photograph 03" onerror="this.parentElement.classList.add('missing')">
+            </button>
             <figcaption><span class="tags">#insert tag</span></figcaption>
           </figure>
         </div>
 
         <div class="featured-row featured-row-four">
           <figure class="photo-card">
-            <div class="photo-link photo-placeholder" aria-label="Project coming soon">
-              <span class="placeholder">Project 07</span>
-              <span class="photo-overlay"><span class="photo-overlay-title">Project Title</span><span class="photo-overlay-copy">Coming soon</span></span>
-            </div>
+            <button class="photo-button" type="button" data-full="images/featured/04.jpg" data-title="Photo 04" data-tags="#architecture #lines">
+              <img src="images/featured/04.jpg" alt="Featured photograph 04" onerror="this.parentElement.classList.add('missing')">
+              <span class="placeholder">04.jpg</span>
+            </button>
             <figcaption><span class="tags">#insert tag</span></figcaption>
           </figure>
 
           <figure class="photo-card">
-            <a class="photo-link" href="landscape photography.html" aria-label="View Landscape Photography">
-              <img src="images/featured/Landscape Photography.jpg" alt="Landscape Photography">
-              <span class="photo-overlay"><span class="photo-overlay-title">Landscape Photography</span><span class="photo-overlay-copy">View project</span></span>
-            </a>
+            <button class="photo-button" type="button" data-full="images/featured/Landscape Photography.jpg">
+              <img src="images/featured/Landscape Photography.jpg" alt="Featured photograph 05" onerror="this.parentElement.classList.add('missing')">
+            </button>
             <figcaption><span class="tags">#insert tag</span></figcaption>
           </figure>
 
           <figure class="photo-card">
-            <a class="photo-link" href="street photography.html" aria-label="View Street Photography">
-              <img src="images/featured/Street Photography.jpg" alt="Street Photography">
-              <span class="photo-overlay"><span class="photo-overlay-title">Street Photography</span><span class="photo-overlay-copy">View project</span></span>
-            </a>
+            <button class="photo-button" type="button" data-full="images/featured/Street Photography.jpg">
+              <img src="images/featured/Street Photography.jpg" alt="Featured photograph 06" onerror="this.parentElement.classList.add('missing')">
+            </button>
             <figcaption><span class="tags">#insert tag</span></figcaption>
           </figure>
 
           <figure class="photo-card">
-            <a class="photo-link" href="nature photography.html" aria-label="View Nature Photography">
-              <img src="images/featured/Nature Photography.jpg" alt="Nature Photography">
-              <span class="photo-overlay"><span class="photo-overlay-title">Nature Photography</span><span class="photo-overlay-copy">View project</span></span>
-            </a>
+            <button class="photo-button" type="button" data-full="images/featured/Nature Photography.jpg">
+              <img src="images/featured/Nature Photography.jpg" alt="Featured photograph 07" onerror="this.parentElement.classList.add('missing')">
+            </button>
             <figcaption><span class="tags">#insert tag</span></figcaption>
           </figure>
         </div>
@@ -143,6 +137,17 @@
   </main>
 
   <footer><span>© <span id="year"></span> raeflections</span><span>photography by rae</span></footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+    <div class="lightbox-inner">
+      <img id="lightbox-image" src="" alt="">
+      <div class="lightbox-meta">
+        <span id="lightbox-title"></span>
+        <span id="lightbox-tags"></span>
+      </div>
+    </div>
+  </div>
 
   <script src="js/gallery.js"></script>
 </body>
