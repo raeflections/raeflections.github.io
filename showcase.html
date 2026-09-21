@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="raeflections — photography archive">
+  <title>raeflections — Works</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">raeflections</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Featured</a>
+      <a class="active" href="showcase.html">Showcase</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="intro">
+      <h1>Insert Header (Other works)</h1>
+      <p class="intro-copy">Insert description</p>
+    </section>
+
+    <section class="works-grid" aria-label="Photography archive">
+      <figure class="photo-card work-card">
+        <button class="photo-button" type="button" data-full="images/works/01.jpg" data-title="Work 01" data-tags="#street #singapore">
+          <img src="images/works/01.jpg" alt="Work photograph 01" onerror="this.parentElement.classList.add('missing')">
+          <span class="placeholder">01.jpg</span>
+        </button>
+        <figcaption><span>Work 01</span><span class="tags">#insert tag</span></figcaption>
+      </figure>
+
+      <figure class="photo-card work-card">
+        <button class="photo-button" type="button" data-full="images/works/02.jpg" data-title="Work 02" data-tags="#portrait #people">
+          <img src="images/works/02.jpg" alt="Work photograph 02" onerror="this.parentElement.classList.add('missing')">
+          <span class="placeholder">02.jpg</span>
+        </button>
+        <figcaption><span>Work 02</span><span class="tags">#insert tag</span></figcaption>
+      </figure>
+
+      <figure class="photo-card work-card">
+        <button class="photo-button" type="button" data-full="images/works/03.jpg" data-title="Work 03" data-tags="#travel #architecture">
+          <img src="images/works/03.jpg" alt="Work photograph 03" onerror="this.parentElement.classList.add('missing')">
+          <span class="placeholder">03.jpg</span>
+        </button>
+        <figcaption><span>Work 03</span><span class="tags">#insert tag</span></figcaption>
+      </figure>
+
+      <figure class="photo-card work-card">
+        <button class="photo-button" type="button" data-full="images/works/04.jpg" data-title="Work 04" data-tags="#night #colour">
+          <img src="images/works/04.jpg" alt="Work photograph 04" onerror="this.parentElement.classList.add('missing')">
+          <span class="placeholder">04.jpg</span>
+        </button>
+        <figcaption><span>Work 04</span><span class="tags">#insert tag</span></figcaption>
+      </figure>
+
+      <figure class="photo-card work-card">
+        <button class="photo-button" type="button" data-full="images/works/05.jpg" data-title="Work 05" data-tags="#nature #landscape">
+          <img src="images/works/05.jpg" alt="Work photograph 05" onerror="this.parentElement.classList.add('missing')">
+          <span class="placeholder">05.jpg</span>
+        </button>
+        <figcaption><span>Work 05</span><span class="tags">#insert tag</span></figcaption>
+      </figure>
+
+      <figure class="photo-card work-card">
+        <button class="photo-button" type="button" data-full="images/works/06.jpg" data-title="Work 06" data-tags="#details #everyday">
+          <img src="images/works/06.jpg" alt="Work photograph 06" onerror="this.parentElement.classList.add('missing')">
+          <span class="placeholder">06.jpg</span>
+        </button>
+        <figcaption><span>Work 06</span><span class="tags">#insert tag</span></figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> raeflections</span><span>photography by rae</span></footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+    <div class="lightbox-inner">
+      <img id="lightbox-image" src="" alt="">
+      <div class="lightbox-meta">
+        <span id="lightbox-title"></span>
+        <span id="lightbox-tags"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/gallery.js"></script>
+</body>
+</html>
