@@ -74,6 +74,7 @@ h1 { margin:0; font-family:"Playfair Display",Georgia,serif; font-size:clamp(3.4
 .project-meta dd { margin:6px 0 0; color:var(--muted); line-height:1.65; }
 .project-copy { margin-top:34px; line-height:1.7; }
 .project-note { margin-top:30px; color:var(--muted); font-size:.75rem; line-height:1.6; }
+.project-video { display: block; width: 100%; height: auto; object-fit: contain; }
 
 footer { padding:26px 0 35px; display:flex; justify-content:space-between; border-top:1px solid var(--line); color:var(--muted); font-size:.65rem; letter-spacing:.1em; text-transform:uppercase; }
 
