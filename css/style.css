@@ -51,7 +51,7 @@ h1 { margin:0; font-family:"Playfair Display",Georgia,serif; font-size:clamp(3.4
 .about-page { min-height:calc(100vh - 170px); display:grid; grid-template-columns:minmax(0,700px) 1fr; gap:80px; align-items:center; padding:90px 0 100px; }
 .about-copy h1 { margin-bottom:48px; }
 .about-copy>p:not(.eyebrow) { max-width:630px; font-size:clamp(1rem,1.6vw,1.25rem); line-height:1.75; }
-.about-lead { font-size: 25px; line-height:1.35; }
+.about-lead { font-size: 25px; line-height:1.35; font-family: 'DM Sans', sans-serif;}
 .about-photo { display:flex; align-items:center; justify-content:center; }
 .about-profile-image { display:block; width:min(100%,550px); height:auto; }
 
